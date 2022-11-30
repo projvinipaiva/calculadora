@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+
     <div class="fundo">
-        <h1>Calculadora Simples</h1>
-        <div class="calvuladora">
+        <h1>Calculadora simples com Javascript</h1>
+        <div class="calculadora">
             <h1>Calculadora</h1>
             <p id="resultado"></p>
             <table>
@@ -39,12 +40,13 @@
                     <td rowspan="2"><button class="botao" style="height: 106px;" onclick="calcular()">=</button></td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
+                    <td colspan="2"><button class="botao" onclick="insere('0')" style="width: 106px;">0</button></td>
+                    <td><button class="botao" onclick="insere('.')">.</button></td>
                 </tr>
             </table>
         </div>
     </div>
     <script src="js/calculadora.js"></script>
+    
 </body>
 </html>

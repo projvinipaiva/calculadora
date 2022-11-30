@@ -1,10 +1,12 @@
 function insere(numero){
     var valor = document.getElementById('resultado').innerHTML;
     document.getElementById('resultado').innerHTML = valor + numero;
+
 }
 
 function limpar(){
     document.getElementById('resultado').innerHTML = "";
+
 }
 
 function voltar(){
@@ -15,9 +17,11 @@ function voltar(){
 function calcular(){
     var resultado = document.getElementById('resultado').innerHTML;
     if(resultado){
-        document.getElementById('resultado').innerHTML = aval(resultado);
+        document.getElementById('resultado').innerHTML = eval(resultado);
+
     }
+
     else{
-        document.getElementById('resultado').innerHTML = "nada...";
+        document.getElementById('resultado').innerHTML = "Nada ..."
     }
 }
